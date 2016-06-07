@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTv-Fd-Sbo">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rTv-Fd-Sbo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="5jl-Oz-9Tf"/>
+                            <constraint firstItem="rTv-Fd-Sbo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="9Wc-9M-w65"/>
+                            <constraint firstItem="rTv-Fd-Sbo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HTD-9Z-Ib0"/>
+                            <constraint firstItem="rTv-Fd-Sbo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WWL-0E-bNF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="rTv-Fd-Sbo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5jl-Oz-9Tf"/>
+                                <exclude reference="9Wc-9M-w65"/>
+                                <exclude reference="HTD-9Z-Ib0"/>
+                                <exclude reference="WWL-0E-bNF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="rTv-Fd-Sbo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5jl-Oz-9Tf"/>
+                                <include reference="9Wc-9M-w65"/>
+                                <include reference="HTD-9Z-Ib0"/>
+                                <include reference="WWL-0E-bNF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="rTv-Fd-Sbo" id="egV-6S-hJG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HybridDemo</title>
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		h1{
+			text-align: center;
+		}
+		div,button{
+			width: 100px;
+			height:40px;
+			margin:0 auto;
+		}
+	</style>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+	<h1>HybridDemo</h1>
+	<div>
+		<button>调用MPOS</button>
+	</div>
+	<script>
+		$('button').on('click',function() {
+			window.location.href = 'mpos://';
+		});
+	</script>
+</body>
+</html>
